@@ -1,0 +1,12 @@
+[
+	{
+		"id": 0,
+		"title": "Wodden Sword",
+		"attack": "1d3"
+	},
+	{
+		"id": 1,
+		"title": "Stone Sword",
+		"attack": "2d3"
+	}
+]
