@@ -28,6 +28,8 @@ namespace RogueSharpTutorial.Model
         public string   Name            { get { return name; }          set { name = value; } }
         private int     awareness;
         public  int     Awareness       { get { return awareness; }     set { awareness = value; } }
+        private Inventory inventory;
+        public  Inventory Inventory     { get { return Inventory; }     set { Inventory = value; } }
 
         // IDrawable
         public  Colors  Color           { get; set; }

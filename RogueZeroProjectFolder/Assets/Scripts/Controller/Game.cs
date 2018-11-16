@@ -5,6 +5,7 @@ using RogueSharpTutorial.Model;
 using RogueSharpTutorial.Utilities;
 using RogueSharp.Random;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RogueSharpTutorial.Controller
 {
@@ -37,6 +38,8 @@ namespace RogueSharpTutorial.Controller
 
             rootConsole             = console;
             rootConsole.UpdateView  += OnUpdate;                         // Set up a handler for graphic engine Update event
+
+            //Panel g = rootConsole.GetComponent("Panel");
 
             MessageLog.Add("The rogue arrives on level "+ mapLevel);
             MessageLog.Add("Level created with seed '" + seed + "'");
