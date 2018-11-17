@@ -34,6 +34,10 @@ public class Inventory : MonoBehaviour
 		AddItem(2);
 	}
 
+	/**
+       * Takes the id if an Item and adds it to the Inventory.
+       * @param id an integer ID of the Item to add.
+       */
 	public void AddItem(int id)
 	{
 		Item itemToAdd = database.GetItemByID(id);
