@@ -27,7 +27,7 @@ namespace RogueSharpTutorial.Model
                 return;
             }
 
-            Symbol = IsUp ? '<' : '>';
+            Symbol = IsUp ? '+' : '-';
 
             if (map.IsInFov(X, Y))
             {

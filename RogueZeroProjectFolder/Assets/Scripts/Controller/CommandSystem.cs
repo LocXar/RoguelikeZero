@@ -22,16 +22,6 @@ namespace RogueSharpTutorial.Controller
 		/// </summary>
 		/// <param name="direction"></param>
 		/// <returns></returns>
-		public bool ToggleInventory ()
-		{
-			return true;
-		}
-
-		/// <summary>
-		/// Return value is true if the player was able to move false when the player couldn't move, such as trying to move into a wall.
-		/// </summary>
-		/// <param name="direction"></param>
-		/// <returns></returns>
 		public bool MovePlayer (Direction direction)
 		{
 			int x = game.Player.X;

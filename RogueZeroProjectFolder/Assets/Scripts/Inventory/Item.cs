@@ -8,24 +8,25 @@ public class Item
 	public string Type { get; set; }
 	public string SpriteID { get; set; }
 	public Sprite Sprite { get; set; }
+    public bool Stackable { get; set; }
 	
 	public Item()
 	{
 		this.ID = -1;
 	}
 
-	public Item (string name, int id=-1, string type="Debug", String spriteID="Debug", Sprite sprite=null)
+	public Item (string name, int id=-1, string type="Debug", String spriteID="Debug", Sprite sprite=null, bool stackable=false)
 	{
 		this.ID = id;
 		this.Name = name;
 		this.SpriteID = spriteID;
 		if(sprite == null)
 		{
-			Debug.Log("SpritePath: " + Application.dataPath + "/StreamingAssets/Debug.png");
-			sprite = Resources.Load<Sprite>(Application.dataPath + "/StreamingAssets/Debug.png");
-			
-		}
+			Debug.Log("Item.cs|item(string name, int id=-1, string type='Debug', String spriteID='Debug', Sprite sprite=null)|spriteID: " + spriteID);
+			sprite = SpritesLoader.SpriteList.Find(itemSprite => itemSprite.name == spriteID);
+        }
 		this.Sprite = sprite;
+        this.Stackable = stackable;
 	}
 }
 

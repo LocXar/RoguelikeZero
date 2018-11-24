@@ -1,16 +1,18 @@
 [
-	{
-		"id": 1,
-		"type": "Weapons",
-		"spriteID": "Weapon_01",
-		"name": "Wodden Sword",
-		"attack": "1d3"
-	},
-	{
-		"id": 2,
-		"type": "Weapons",
-		"spriteID": "Weapon_02",
-		"name": "Stone Sword",
-		"attack": "2d3"
-	}
+  {
+    "id": 1,
+    "stackable": false,
+    "type": "Weapons",
+    "spriteID": "Weapon_01",
+    "name": "Wodden Sword",
+    "attack": "1d3"
+  },
+  {
+    "id": 2,
+    "stackable": true,
+    "type": "Weapons",
+    "spriteID": "Weapon_02",
+    "name": "Stone Sword",
+    "attack": "2d3"
+  }
 ]

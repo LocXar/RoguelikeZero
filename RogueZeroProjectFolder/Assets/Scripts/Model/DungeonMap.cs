@@ -260,7 +260,7 @@ namespace RogueSharpTutorial.Model
             {
                 if (cell.IsWalkable)                                                            // Choose the symbol to draw based on if the cell is walkable or not '.' for floor and '#' for walls
                 {
-                    game.SetMapCell(cell.X, cell.Y, Colors.FloorFov, Colors.FloorBackgroundFov, '.', cell.IsExplored);
+                    game.SetMapCell(cell.X, cell.Y, Colors.FloorFov, Colors.FloorBackgroundFov, ' ', cell.IsExplored);
                 }
                 else
                 {
@@ -271,7 +271,7 @@ namespace RogueSharpTutorial.Model
             {
                 if (cell.IsWalkable)
                 {
-                    game.SetMapCell(cell.X, cell.Y, Colors.Floor, Colors.FloorBackground, '.', cell.IsExplored);
+                    game.SetMapCell(cell.X, cell.Y, Colors.Floor, Colors.FloorBackground, ' ', cell.IsExplored);
                 }
                 else
                 {

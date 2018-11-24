@@ -39,8 +39,6 @@ namespace RogueSharpTutorial.Controller
             rootConsole             = console;
             rootConsole.UpdateView  += OnUpdate;                         // Set up a handler for graphic engine Update event
 
-            //Panel g = rootConsole.GetComponent("Panel");
-
             MessageLog.Add("The rogue arrives on level "+ mapLevel);
             MessageLog.Add("Level created with seed '" + seed + "'");
 
@@ -110,7 +108,7 @@ namespace RogueSharpTutorial.Controller
             if (commandSystem.IsPlayerTurn)
             {
 				if (command.ToString() != "None") {
-					MessageLog.Add ("KeyInput: '" + command.ToString () + "'");
+					Debug.Log("KeyInput: '" + command.ToString () + "'");
 				}
 				
                 switch (command)
@@ -143,6 +141,7 @@ namespace RogueSharpTutorial.Controller
                         didPlayerAct = commandSystem.MovePlayer(Direction.DownRight);
                         break;
 					case InputCommands.Inventory:
+                        UIController.ToggleInventoryVisibility();
 						didPlayerAct = true;
 						break;
                     case InputCommands.StairsDown:

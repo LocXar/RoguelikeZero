@@ -18,7 +18,7 @@ namespace RogueSharpTutorial.Model
 
         public Door(Game game)
         {
-            Symbol          = '+';
+            Symbol          = 'o';
             Color           = Colors.Door;
             BackgroundColor = Colors.DoorBackground;
             this.game       = game;
@@ -31,7 +31,7 @@ namespace RogueSharpTutorial.Model
                 return;
             }
 
-            Symbol = IsOpen ? '-' : '+';
+            Symbol = IsOpen ? 'c' : 'o';
 
             if (map.IsInFov(X, Y))
             {
